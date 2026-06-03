@@ -88,5 +88,5 @@
 #
 ### 🚀 Estado del proyecto
 <p style="text-align: justify;">
-    Este proyecto seguirá evolucionando mediante nuevas mejoras, funcionalidades y optimizaciones enfocadas en el <b>bloc de gastos Personales</b>, con el objetivo de seguir fortaleciendo habilidades en distintas áreas del desarrollo de software. Además, representa una práctica integral del mismo sistema implementado en múltiples lenguajes y entornos, aplicando buenas prácticas tanto en frontend como en backend.
+    Este proyecto seguirá evolucionando mediante nuevas mejoras, funcionalidades y optimizaciones enfocadas en el <b>bloc de gastos personales</b>, con el objetivo de seguir fortaleciendo habilidades en distintas áreas del desarrollo de software. Además, representa una práctica integral del mismo sistema implementado en múltiples lenguajes y entornos, aplicando buenas prácticas tanto en frontend como en backend.
 </p>
