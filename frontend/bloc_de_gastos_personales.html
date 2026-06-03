@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloc de gastos personales</title>
+    <link rel="stylesheet" href="bloc_de_gastos_personales.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="bloc_de_gastos_personales.js" defer></script>
+</head>
+<body>
+    <!--------------------------------------------->
+    <!--|estructurando_bloc_de_gastos_personales|-->
+    <!--------------------------------------------->
+    <div class="contenedor">
+        <div class="titulo">
+            Bloc de gastos personales
+        </div>
+        <div class="contenido">
+            <label>
+                Agregar el monto
+            </label>
+            <input
+                type="number"
+                id="monto"
+                placeholder="Añade el monto..."
+            >
+            <label>
+                Agregar el presupuesto
+            </label>
+            <input
+                type="number"
+                id="presupuesto"
+                placeholder="Añade el presupuesto..."
+            >
+            <label>
+                Seleccionar la categoria
+            </label>
+            <div class="contenedor-select">
+                <select id="categoria">
+                    <option>
+                        Ninguna categoría...
+                    </option>
+                    <option>
+                        Alimentación
+                    </option>
+                    <option>
+                        Transporte
+                    </option>
+                    <option>
+                        Salud
+                    </option>
+                    <option>
+                        Entretenimiento
+                    </option>
+                </select>
+            </div>
+            <label>
+                Has una descripcion
+            </label>
+            <input
+                type="text"
+                id="descripcion"
+                placeholder="Añade la descripcion..."
+            >
+            <button id="boton_agregar_gasto">
+                Agregar gasto
+            </button>
+        </div>
+    </div>
+    <!-------------------------------------->
+    <!--|estructurando_registro_de_gastos|-->
+    <!-------------------------------------->
+    <div class="contenedor-estadisticas">
+        <div class="tarjeta">
+            <div class="titulo">
+                Total gastado
+            </div>
+            <div
+                class="valor"
+                id="total_gastado"
+            >
+                0
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="titulo">
+                Presupuesto
+            </div>
+            <div
+                class="valor"
+                id="presupuesto_total"
+            >
+                0
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="titulo">
+                Disponible
+            </div>
+            <div
+                class="valor"
+                id="disponible_total"
+            >
+                0
+            </div>
+        </div>
+    </div>
+    <!------------------------------------->
+    <!--|estructurando_tablero_de_gastos|-->
+    <!------------------------------------->
+    <div class="contenedor_tabla">
+        <div class="titulo_tabla">
+            Tablero de gastos
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="columna_numero">
+                        N°
+                    </th>
+                    <th class="columna_descripcion">
+                        Descripcion
+                    </th>
+                    <th class="columna_categoria">
+                        Categorias
+                    </th>
+                    <th class="columna_monto">
+                        Monto
+                    </th>
+                    <th class="columna_presupuesto">
+                        Presupuesto
+                    </th>
+                    <th class="columna_acciones">
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="contenedor_tabla_gastos">
+                <tr id="fila_mensaje_vacio">
+                    <td
+                        colspan="6"
+                        class="mensaje_vacio"
+                    >
+                        Ningun gasto añadido en el tablero
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
